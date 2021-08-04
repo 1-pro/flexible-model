@@ -1,0 +1,125 @@
+*{
+  margin:0px;
+  padding: 0px;
+  color: blue;
+}
+body{
+  text-align: center;
+}
+#big_wrapper{
+  border: 1px solid black;
+  width: 1000px;
+  margin: 20px auto;
+  text-align: left;
+}
+#top_header{
+  background: yellowgreen;
+  border: 1px solid blue;
+  padding: 20px;
+}
+#top_menu{
+  background: rgba(0, 0, 255, 0.623);
+  color:white;
+}
+#top_menu li{
+  display: inline-block;
+  font: 14px bold Tahoma;
+  color:whitesmoke;
+  list-style-type: none;
+  padding: 5px;
+}
+h1{
+  font: bold 20px Tahoma ;
+}
+h2{
+  font: bold 15px Tahoma ;
+}
+header, section, aside, footer, nav, article, hgroup{
+  display: block;
+}
+/*p[class*=Article]{color: aqua}*/
+ /*pseudo class*/ 
+li.child:nth-child(odd){
+  color:chartreuse
+}
+  /*negation pseudo class*/
+:not(.child){
+  color: chocolate;
+}
+/*todo selector{affects the stated element or attribute that follows the stated element or attribute , not minding if they have the same parent*/
+p ~ p.checkers{
+  font-weight: bolder;
+  font-family: fantasy;
+  font-style: italic;
+  color: black;
+}
+/*plus selector{affects the stated element or attribute that follows the stated element or attribute, as long as they have the same parent*/
+p.clothes + p{font-family:cursive;font-weight: bolder;font-size: smaller;}
+/*Greater than selector{affects every element or attribute thats its child*/
+/*article > footer{font-style: italic;}*/
+#main_section{
+   float: left;
+   width: 660px;
+   margin: 30px;
+ }
+ article{
+   background: #fffbcc;
+   border: 1px solid red;
+   padding: 20px;
+   margin-bottom: 15px;
+ }
+ article footer{
+   text-align: right;
+ }
+#side_news{
+  float: left;
+  width: 220px;
+  margin: 20px 0px;
+  padding: 29px;
+  background: #66CCCC;
+}
+#mummy{
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border: 1px solid blue;
+  margin: 20px;
+  width: 900px;
+  -webkit-box-direction: reverse;
+  -webkit-box-pack:center;
+  -webkit-transform:translate3d(120px, 100px) rotate3d(42deg) scale3d(.8);
+}
+#child1{
+  border: 2px solid green;
+  background: lawngreen;
+  padding: 20px;
+  margin:10px;
+  width: 60px;
+}
+#child2{
+  border: 2px solid green;
+  background: khaki;
+  padding: 20px;
+  margin:10px;
+  width: 60px;
+  -webkit-box-flex: 1;
+}
+#child3{
+  border: 2px solid green;
+  background: darkmagenta;
+  padding: 20px;
+  margin:10px;
+  width: 60px;
+}
+#child4{
+  border: 2px solid green;
+  background: goldenrod;
+  padding: 20px;
+  margin:10px;
+  width: 60px;
+}
+#the_footer{
+  clear: both;
+  border-top: 1px solid olivedrab;
+  text-align: center;
+  padding: 10px;
+}
